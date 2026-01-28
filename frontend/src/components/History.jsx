@@ -6,7 +6,7 @@ function History() {
   const [selectedQuiz, setSelectedQuiz] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/quizzes")
+    fetch("https://wiki-quiz-app-kaoo.onrender.com/quizzes")
       .then(res => res.json())
       .then(data => setQuizzes(data));
   }, []);

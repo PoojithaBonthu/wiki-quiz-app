@@ -18,7 +18,7 @@ function GenerateQuiz() {
       setError("");
 
       const response = await fetch(
-        `http://127.0.0.1:8000/test-llm?url=${encodeURIComponent(url)}`
+        `https://wiki-quiz-app-kaoo.onrender.com/test-llm?url=${encodeURIComponent(url)}`
       );
       const data = await response.json();
       setResult(data);

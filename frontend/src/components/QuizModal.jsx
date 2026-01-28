@@ -4,7 +4,7 @@ function QuizModal({ quizId, onClose }) {
   const [quiz, setQuiz] = useState(null);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/quizzes/${quizId}`)
+    fetch(`https://wiki-quiz-app-kaoo.onrender.com/quizzes/${quizId}`)
       .then(res => res.json())
       .then(data => setQuiz(data));
   }, [quizId]);
