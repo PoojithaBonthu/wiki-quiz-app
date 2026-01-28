@@ -78,7 +78,7 @@ const chip = {
   padding: "6px 12px",
   borderRadius: "20px",
 };
-document.body.style.overflow = "hidden";
+
 
 
 export default QuizModal;
